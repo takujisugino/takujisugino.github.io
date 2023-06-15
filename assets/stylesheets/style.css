@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 html, body {
   --color-primary: #E1E1E5;
+  --color-primary-rgb: 225,225,229;
   --color-secondary: #E18027;
+  --color-secondary-rgb: 225,128,39;
   --text-color: #0a0a0a;
+  --text-color-rgb: 10,10,10;
   background-color: fff;
   color: var(--text-color);
   font-family: 'Noto Sans JP', sans-serif;
@@ -119,7 +122,7 @@ main {
 }
 
 .fv {
-  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: serif;
   font-weight: bold;
   line-height: 1.8;
   margin: 20px 0;
@@ -127,30 +130,43 @@ main {
 }
 
 .fv__text {
+  align-items: center;
   box-sizing: border-box;
+  color: var(--color-primary);
+  display: flex;
   font-size: 48px;
   font-weight: bold;
   padding: 24px 24px;
   position: absolute;
+  text-shadow: 2px 3px 5px var(--text-color);
   width: 100%;
   height: 100%;
   z-index: 90;
 }
 
 .fv__cover {
+  background-color: rgba(var(--text-color-rgb), 0.25);
   box-sizing: border-box;
-  background-color: #fafafa40;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 80;
 }
 
-.fv > img {
+.fv__backgrounds {
   width: 100%;
-  height: 300px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fv > video {
+  --blur-size: 5px;
+  width: calc(100% + var(--blur-size) * 2);
+  height: calc(350px - var(--blur-size) * 2);
   object-fit: cover;
-  filter: blur(6px);
+  filter: blur(var(--blur-size));
+  margin: calc(-1 * var(--blur-size))px;
   z-index: 0;
 }
 

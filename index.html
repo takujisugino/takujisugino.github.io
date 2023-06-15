@@ -15,14 +15,17 @@
       <nav class="header__nav">
         <ul>
           <li><a href="/#services" class="header__link_nav">サービス紹介</a></li>
+          <li><a href="/#company" class="header__link_nav">会社概要</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="fv">
         <div class="fv__text">モノの価値を最大化し、<br>環境・経済を循環させる事で、<br>暮らしを豊かにする</div>
-        <div class="fv__cover"></div>
-        <img src="/assets/images/fv.jpg" alt="FV">
+        <div class="fv__backgrounds">
+          <div class="fv__cover"></div>
+          <video src="/assets/videos/fv.mkv" poster="/assets/images/fv.png" autoplay loop muted></video>
+        </div>
       </div>
       <div class="content content_reverse">
         <div class="image-container pc">
@@ -40,7 +43,7 @@
         </div>
       </div>
       <div class="content">
-        <div class="company">
+        <div id="company" class="company">
           <h3>会社概要</h2>
           <dl>
             <dt>会社名</dt>
