@@ -51,6 +51,10 @@ ol > li > ol > li:before {
   margin-right: 4px;
 }
 
+.inquery {
+  width: 100%;
+}
+
 form {
   width: 100%;
 }
@@ -181,8 +185,12 @@ main {
   flex-direction: row-reverse;
 }
 
-.content > .image-container {
+.image-container {
   box-sizing: border-box;
+  padding: 16px;
+}
+
+.image-container.pc {
   display: flex;
   width: calc(50% - 16px);
   align-items: center;
