@@ -372,10 +372,33 @@ main {
   font-size: 12px;
   justify-content: end;
   background-color: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left center right";
+}
+
+.footer__logo {
+  grid-area: center;
+  place-self: center center;
+}
+
+.footer__logo > a {
+  color: var(--text-color);
   display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.footer__logo-image {
+  width: auto;
+  height: 24px;
 }
 
 .footer__links {
+  grid-area: right;
+  place-self: center right;
   list-style: none;
   padding: 0 16px 4px;
   display: flex;
