@@ -472,9 +472,6 @@ a.footer__link {
   
   .header__nav {
     display: none;
-    transition: 0.25s ease;
-    animation: appear 1.5s ease;
-    animation-direction: reverse;
   }
 
   .header__nav.header__nav_opened {
@@ -485,7 +482,6 @@ a.footer__link {
     left: 0;
     width: 100%;
     height: calc(100dvh - var(--header-height));
-    animation: appear 1.5s ease;
   }
 
   .header__nav > ul {
@@ -585,15 +581,4 @@ a.footer__link {
   }
 
 
-}
-
-/* Animations */
-
-@keyframes appear {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
 }
