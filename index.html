@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
     <link rel="canonical" href="https://reuse-plus.co.jp">
-    <script src="./assets/scripts/scripts.js"></script>
+    <script src="./assets/scripts/common.js"></script>
 
     <title>株式会社リユースプラス</title>
     <meta name="description" content="株式会社リユースプラスは、「モノの価値を最大化し、環境・経済を循環させる事で、暮らしを豊かにする」をビジョンにリユース事業「おうちで出張買取」を運営しています。">
@@ -13,7 +13,7 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <a href="/"><img src="/assets/images/reuseplus_logo.png" alt="株式会社リユースプラス" class="header__logo-image"></a>
+        <a href="/#"><img src="/assets/images/reuseplus_logo.png" alt="株式会社リユースプラス" class="header__logo-image"></a>
       </div>
       <nav class="header__nav">
         <ul>
@@ -23,6 +23,11 @@
           <li><a href="/#contact" class="header__link_nav">CONTACT</a></li>
         </ul>
       </nav>
+      <div id="menuButton" class="header__menu-button">
+        <span class="header-button__line header-button__line_top"></span>
+        <span class="header-button__line header-button__line_middle"></span>
+        <span class="header-button__line header-button__line_bottom"></span>
+      </span>
     </header>
     <main>
       <div class="fv">
@@ -32,11 +37,11 @@
           <img src="/assets/images/fv_photo.png" alt="" class="fv__photo">
         </div>
       </div>
-      <div class="content service">
+      <div id="services" class="content service">
         <div class="image-container pc">
           <a href="https://ouchide-kaitori.jp/"><img src="/assets/images/service_capture.png" alt=""></a>
         </div>
-        <div id="services" class="intro">
+        <div class="intro">
           <h3><a href="https://ouchide-kaitori.jp/"><img src="/assets/images/service_logo.svg"></a></h3>
           <div class="image-container sp">
             <a href="https://ouchide-kaitori.jp/"><img src="/assets/images/service_capture.png" alt=""></a>
@@ -65,8 +70,8 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8122572517323!2d139.69597511143132!3d35.65699693119054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5653c64b17%3A0x2a84e8e25090f909!2z44CSMTUwLTAwNDMg5p2x5Lqs6YO95riL6LC35Yy66YGT546E5Z2C77yR5LiB55uu77yR77yQ4oiS77yYIOa4i-iwt-mBk-eOhOWdguadseaApeODk-ODqyAyZg!5e0!3m2!1sja!2sjp!4v1689063513477!5m2!1sja!2sjp" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div class="content recruit">
-        <h3 id="recruit">RECRUIT</h3>
+      <div id="recruit" class="content recruit">
+        <h3>RECRUIT</h3>
         <div class="recruit__text">
           一緒に働く仲間を探しています<br>
           皆様のご応募心よりお待ちしています
@@ -83,7 +88,7 @@
           </div>
           <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKXNYyZmYiMPMbxsLnd_JFTHJdN3TzaaDzWJcvqmAwb_jrdQ/formResponse"
-          method="POST" target="none" onsubmit="submitted = true" class="inquery__form">
+          method="POST" target="none" onsubmit="window.submitted = true" class="inquery__form">
             <div>
               <label for="name">名前 <span class="text__red">※</span></label>
               <input id="name" name="entry.1011795192" type="text" placeholder="山田太郎" required="required">
@@ -124,13 +129,13 @@
               <input type="submit" value="送信する" class="link-button link-button_secondary">
             </div>
           </form>
-          <iframe id="none" name="none" style="display:none;" onload="if(submitted) {window.location='thanks.html'}"></iframe>
+          <iframe id="none" name="none" style="display:none;" onload="if(window.submitted) {window.location='thanks.html'}"></iframe>
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="footer__logo">
-        <a href="/"><img src="/assets/images/reuseplus_logo.png" alt="株式会社リユースプラス" class="footer__logo-image"></a>
+        <a href="/#"><img src="/assets/images/reuseplus_logo.png" alt="株式会社リユースプラス" class="footer__logo-image"></a>
       </div>  
       <ul class="footer__links">
         <li><a href="/terms.html" class="footer__link">利用規約</a></li>
