@@ -371,6 +371,7 @@ main {
   align-self: center;
   border-radius: 0;
   border: none;
+  cursor: pointer;
   display: block;
   font-weight: 700;
   flex-grow: 0;
@@ -390,12 +391,6 @@ main {
 .link-button_secondary {
   background-color: var(--color-secondary);
   color: var(--color-primary);
-}
-
-.link-button[disabled] {
-  /* color: #fcfcfc; */
-  cursor: not-allowed;
-  pointer-events: none;
 }
 
 .footer {
